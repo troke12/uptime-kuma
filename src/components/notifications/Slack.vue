@@ -8,7 +8,9 @@
         <input id="slack-iconemo" v-model="$parent.notification.slackiconemo" type="text" class="form-control">
         <label for="slack-channel" class="form-label">{{ $t("Channel Name") }}</label>
         <input id="slack-channel-name" v-model="$parent.notification.slackchannel" type="text" class="form-control">
-
+        <label for="slack-mentionuser" class="form-label">{{ $t("Mention Userlist") }}</label>
+        <input id="slack-mentionuser" v-model="$parent.notification.slackmentionuser" type="text" class="form-control">
+        
         <div class="form-text">
             <span style="color: red;"><sup>*</sup></span>{{ $t("Required") }}
             <i18n-t tag="p" keypath="aboutWebhooks" style="margin-top: 8px;">
